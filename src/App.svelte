@@ -2,7 +2,7 @@
   let count = $state(0)
 </script>
 
-<main>
+<main style="--logo-url: url('{import.meta.env.BASE_URL}PomoTimeTrackerLogo.PNG')">
   <h1>PomoTimeTracker — Support page</h1>
   <p>Track time with Pomodoro and quick entry. View calendar and statistics of activities with ease.</p>
 
@@ -11,7 +11,7 @@
   </p>
 
   <p>
-    <a href="/TimeTracker_demo.pdf">Download demonstration file (PDF)</a>
+    <a href="{import.meta.env.BASE_URL}TimeTracker_demo.pdf">Download demonstration file (PDF)</a>
   </p>
 </main>
 
@@ -25,7 +25,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: url('/PomoTimeTrackerLogo.PNG') center / contain no-repeat;
+    background: var(--logo-url) center / contain no-repeat;
     opacity: 0.15;
     z-index: -1;
     pointer-events: none;
