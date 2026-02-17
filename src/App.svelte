@@ -3,21 +3,32 @@
 </script>
 
 <main>
-  <h1>Time Tracker — Support</h1>
-  <p>Track time with Pomodoro and quick entry. View calendar and statistics.</p>
+  <h1>PomoTimeTracker — Support page</h1>
+  <p>Track time with Pomodoro and quick entry. View calendar and statistics of activities with ease.</p>
 
   <p>
-    <button onclick={() => (count += 1)}>Clicked {count} {count === 1 ? 'time' : 'times'}</button>
+    <a href="mailto:pomotimetracker@outlook.com">Contact: pomotimetracker@outlook.com</a>
   </p>
 
   <p>
-    <a href="mailto:support@example.com">Contact: support@example.com</a>
+    <a href="/TimeTracker_demo.pdf">Download demonstration file (PDF)</a>
   </p>
 </main>
 
 <style>
   main {
     text-align: left;
+    position: relative;
+    min-height: 60vh;
+  }
+  main::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('/PomoTimeTrackerLogo.PNG') center / contain no-repeat;
+    opacity: 0.15;
+    z-index: -1;
+    pointer-events: none;
   }
   h1 {
     font-size: 1.5rem;
