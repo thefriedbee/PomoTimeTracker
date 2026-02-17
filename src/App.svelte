@@ -13,6 +13,10 @@
   <p>
     <a href="{import.meta.env.BASE_URL}TimeTracker_demo.pdf">Download demonstration file (PDF)</a>
   </p>
+
+  <p>
+    <a href="{import.meta.env.BASE_URL}privacy.html">Privacy Policy</a>
+  </p>
 </main>
 
 <style>
