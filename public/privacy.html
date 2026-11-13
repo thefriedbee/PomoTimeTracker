@@ -3,66 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy — PomoTimeTracker</title>
+    <meta name="description" content="How FocoTaps handles local activity records, optional DeepSeek AI processing, iCloud backups, and connected features." />
+    <meta name="theme-color" content="#fffaf5" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./focotaps-logo.png" />
+    <title>Privacy Policy — FocoTaps</title>
     <style>
-      :root {
-        font-family: system-ui, sans-serif;
-        color: #1a1a1a;
-        background: #fff;
-      }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        padding: 2rem 1rem;
-      }
-      .container {
-        max-width: 640px;
-        margin: 0 auto;
-      }
-      h1 { font-size: 1.5rem; margin-top: 0; }
-      h2 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
-      p, li { line-height: 1.5; }
-      a { color: #2563eb; }
-      ul { padding-left: 1.25rem; }
-      .back { margin-bottom: 1.5rem; }
+      :root { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #20364b; background: #fffaf5; line-height: 1.65; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-width: 280px; }
+      main { max-width: 760px; margin: 0 auto; padding: 48px 28px; }
+      .brand { display: inline-flex; align-items: center; gap: 12px; font-size: 1.1rem; font-weight: 650; text-decoration: none; color: #20364b; }
+      .brand img { display: block; border-radius: 12px; }
+      h1 { font-size: clamp(1.8rem, 5vw, 2.25rem); letter-spacing: -0.03em; line-height: 1.2; margin: 32px 0 12px; }
+      h2 { font-size: 1.15rem; line-height: 1.4; margin: 32px 0 12px; scroll-margin-top: 24px; }
+      p, ul { margin: 0 0 16px; }
+      ul { padding-left: 1.4rem; }
+      li { margin-bottom: 6px; }
+      a { color: #a93225; text-underline-offset: 3px; overflow-wrap: anywhere; }
+      a:hover { color: #76251c; }
+      a:focus-visible { outline: 3px solid #20364b; outline-offset: 5px; border-radius: 2px; }
+      .updated { color: #596672; font-size: 0.9rem; }
+      .summary { padding: 20px; background: #fff; border: 1px solid #e9d9cc; border-radius: 16px; }
+      .summary p:last-child { margin-bottom: 0; }
+      footer { border-top: 1px solid #e9d9cc; margin-top: 36px; padding-top: 20px; }
+      @media (max-width: 480px) { main { padding: 32px 20px; } }
     </style>
   </head>
   <body>
-    <div class="container">
-      <p class="back"><a href="./">← Back to PomoTimeTracker Support</a></p>
+    <main>
+      <a class="brand" href="./" aria-label="FocoTaps support home">
+        <img src="./focotaps-logo.png" alt="" width="48" height="48" />
+        <span>FocoTaps</span>
+      </a>
 
-      <h1>Privacy Policy — PomoTimeTracker</h1>
-      <p><em>Last updated: April 2026</em></p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: <time datetime="2026-11-13">13 November 2026</time></p>
 
-      <h2>Who we are</h2>
-      <p>FocoTaps/PomoTimeTracker is a time-tracking app that helps you log activities and use the Pomodoro technique. This policy describes how we handle your information.</p>
+      <div class="summary">
+        <p><strong>Your activity records are stored on your device. FocoTaps does not retain user activity data on its servers.</strong></p>
+        <p>Optional AI suggestions and summaries use <strong>DeepSeek’s third-party API</strong>. Relevant information is sent for processing when you request an AI response. DeepSeek’s handling of that information is separate from FocoTaps’ own retention practice.</p>
+      </div>
 
-      <h2>Data we collect</h2>
-      <p>By default, the information you create in the app stays on your device, including:</p>
+      <h2>About FocoTaps</h2>
+      <p>FocoTaps is a time-tracking app for recording activities, focusing on tasks, reviewing your time, and planning goals. This policy explains how information is handled in the app and on this support website.</p>
+
+      <h2>Information on your device</h2>
+      <p>Your records and settings are stored locally, including:</p>
       <ul>
-        <li>Time-tracking events (activities, start and end times)</li>
-        <li>Activity names and groups you set up</li>
-        <li>App settings and preferences</li>
+        <li>Activities, groups, time records, and event notes</li>
+        <li>Day and week notes, goals, targets, focus plans, and achievements</li>
+        <li>App preferences and information used by features you enable</li>
       </ul>
-      <p>We do not maintain a copy of your app data on our servers. We do not use your information to build profiles or for advertising.</p>
+      <p>Charts and local calculations use your saved records. FocoTaps does not sell your activity data or use it for advertising.</p>
 
-      <h2>Advanced statistics (optional)</h2>
-      <p>If you choose features that use <strong>advanced statistics</strong>, the app may send the minimum data needed to our servers so we can generate those statistics and insights for you. Processing happens <strong>on demand</strong> when you request it: we compute the result for that request and do not retain your app information or your tracking history on our systems afterward. Your device remains where your complete records and settings are kept; the server is used only for those requested calculations, not as a backup or archive of your data.</p>
+      <h2 id="ai">Optional AI suggestions and summaries</h2>
+      <p>We use <strong>DeepSeek’s API</strong> to generate AI suggestions and summaries. When you request an AI response, relevant information is sent through the FocoTaps service to DeepSeek for processing:</p>
+      <ul>
+        <li><strong>Coach and statistics requests:</strong> period details, activity and group names, totals, calculated metrics, comparison summaries, and summarized time patterns.</li>
+        <li><strong>Records summaries:</strong> summary statistics and activity breakdowns, plus relevant day/week notes and selected event-note text. Event-note entries can include activity names, group names, and time labels.</li>
+      </ul>
+      <p>These requests use feature-specific information rather than your complete raw event timeline. Activity labels and notes can contain personal information. You can use normal recording and review without requesting AI responses.</p>
+      <p>Requests to the FocoTaps service also include a device-generated identifier, language, membership status, and feature information. The identifier and usage counts are used to apply AI request limits.</p>
 
-      <h2>Where your data is stored</h2>
-      <p>Your ongoing records and settings are stored on your device (for example in local storage). Aside from the optional advanced statistics flow described above, we do not have access to your data and do not send it to third parties for analytics or marketing.</p>
+      <h2>Activity data retention and DeepSeek</h2>
+      <p><strong>FocoTaps does not retain user activity data on its servers.</strong> Activity information submitted for an AI request is processed on demand to return a response; FocoTaps does not keep it as an activity history or backup. This statement concerns activity content, separately from service information such as device identifiers and request-limit counts.</p>
+      <p>DeepSeek receives the relevant AI request content as our third-party API provider. DeepSeek’s processing and retention are governed by the terms applicable to its API service, separately from FocoTaps’ own no-retention practice. For provider information, see <a href="https://cdn.deepseek.com/policies/en-US/deepseek-open-platform-terms-of-service.html">DeepSeek’s Open Platform Terms of Service</a> and <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html">DeepSeek’s Privacy Policy</a>.</p>
 
-      <h2>Third parties</h2>
-      <p>We do not sell your data or share it with third parties for their own purposes. The app may use system features (such as local notifications for Pomodoro timers) that are handled entirely on your device. Any network use tied to advanced statistics is limited to our service for that on-demand processing.</p>
+      <h2>Optional iCloud backup</h2>
+      <p>If you enable iCloud backup on a supported iOS device, a backup of your records and supported settings is stored in your iCloud storage through Apple’s services. This is separate from FocoTaps’ servers. Backups can include notes, activities, goals, and selected preferences.</p>
+      <p>Automatic backup is optional. You can turn it off in FocoTaps Settings. Turning it off stops future automatic uploads and does not delete existing backup copies. Backup is a snapshot of your data and does not continuously synchronize edits between devices.</p>
 
-      <h2>No account required</h2>
-      <p>PomoTimeTracker does not require an account for normal use. There is no sign-in, and we do not keep a persistent archive of your app data on our servers.</p>
+      <h2>Calendar feeds and Screen Time</h2>
+      <p>If you add a calendar subscription, FocoTaps stores its URL and retrieves calendar content directly from that service. Calendar content may be cached on your device. Your calendar provider receives those requests. Keep private subscription URLs confidential; removing a feed from FocoTaps does not delete the original calendar.</p>
+      <p>If you authorize Screen Time features, FocoTaps uses on-device usage information to suggest estimated time ranges. Raw Screen Time reports and selection tokens are not included in the AI request formats described above. Activities you save from suggestions become part of your records and can contribute to AI summaries you request. You can disable suggestions and manage authorization in device settings.</p>
+
+      <h2>Apple services and connected devices</h2>
+      <p>On supported devices, the paired Apple Watch app receives selected activity names, timer state, and daily totals. Notifications, widgets, and Live Activities may display selected information on device surfaces. You can manage their visibility through app and system settings.</p>
+      <p>Apple handles App Store payments. FocoTaps uses purchase and subscription information to determine membership access and restore eligible purchases.</p>
+
+      <h2>Your choices and questions</h2>
+      <p>No FocoTaps account is required for normal recording and review. You can edit or remove local records, choose not to use AI, remove calendar feeds, disable Screen Time suggestions, and turn off automatic iCloud backup. Copies in iCloud or elsewhere must be managed separately from your local records.</p>
+      <p>For privacy questions or requests about information handled by FocoTaps, email <a href="mailto:pomotimetracker@outlook.com">pomotimetracker@outlook.com</a>. We receive the email address, message, and attachments you choose to send when contacting support.</p>
+
+      <h2>This website</h2>
+      <p>This website is hosted on GitHub Pages. GitHub records visitor IP addresses for security purposes. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub’s Pages data-collection information</a>.</p>
 
       <h2>Changes to this policy</h2>
-      <p>We may update this privacy policy from time to time. The current version will always be available at this page. We encourage you to review it periodically.</p>
+      <p>We may update this policy as FocoTaps changes. The current version and its update date will remain available at this address.</p>
 
-      <h2>Contact</h2>
-      <p>If you have questions about this policy or the app, contact us at <a href="mailto:pomotimetracker@outlook.com">pomotimetracker@outlook.com</a>.</p>
-    </div>
+      <footer><a href="./">Back to FocoTaps Support</a></footer>
+    </main>
   </body>
 </html>

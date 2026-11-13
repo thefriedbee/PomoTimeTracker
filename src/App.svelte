@@ -1,49 +1,30 @@
-<script>
-  let count = $state(0)
-</script>
+<main>
+  <header class="brand">
+    <img src="{import.meta.env.BASE_URL}focotaps-logo.png" alt="FocoTaps app logo" width="80" height="80" />
+    <div>
+      <p class="eyebrow">Time tracking and focus</p>
+      <h1>FocoTaps</h1>
+    </div>
+  </header>
 
-<main style="--logo-url: url('{import.meta.env.BASE_URL}PomoTimeTrackerLogo.PNG')">
-  <h1>PomoTimeTracker — Support page</h1>
-  <p>Track time with Pomodoro and quick entry. View calendar and statistics of activities with ease.</p>
+  <p class="intro">Make sense of your time, one activity at a time.</p>
+  <p>Record activities with a timer, Pomodoro session, or timeline entry. Review your day, explore patterns, and plan time for what matters to you.</p>
 
-  <p>
-    <a href="mailto:pomotimetracker@outlook.com">Contact: pomotimetracker@outlook.com</a>
-  </p>
+  <nav class="links" aria-label="Support links">
+    <a href="mailto:pomotimetracker@outlook.com">Contact support</a>
+    <a href="{import.meta.env.BASE_URL}privacy.html">Privacy policy</a>
+  </nav>
 
-  <p>
-    <a href="{import.meta.env.BASE_URL}TimeTracker_demo.pdf">Download demonstration file (PDF)</a>
-  </p>
+  <section class="privacy" aria-labelledby="privacy-heading">
+    <h2 id="privacy-heading">Your records and your choices</h2>
+    <p>Your records are stored on your device, with optional iCloud backup on supported devices. FocoTaps does not retain your activity data on its servers.</p>
+    <p>Optional AI suggestions and summaries use DeepSeek’s third-party API. When you request an AI response, relevant statistics and, for Records summaries, note text are sent for processing.</p>
+    <a href="{import.meta.env.BASE_URL}privacy.html#ai">See what is shared with DeepSeek</a>
+  </section>
 
-  <p>
-    <a href="{import.meta.env.BASE_URL}privacy.html">Privacy Policy</a>
-  </p>
+  <section aria-labelledby="support-heading">
+    <h2 id="support-heading">Need help?</h2>
+    <p>Email <a href="mailto:pomotimetracker@outlook.com">pomotimetracker@outlook.com</a> with your app version, device, and a description of the issue.</p>
+    <p class="muted"><a href="{import.meta.env.BASE_URL}TimeTracker_demo.pdf">Earlier demonstration guide (PDF)</a><br />This guide may show an older version of the app.</p>
+  </section>
 </main>
-
-<style>
-  main {
-    text-align: left;
-    position: relative;
-    min-height: 60vh;
-  }
-  main::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--logo-url) center / contain no-repeat;
-    opacity: 0.15;
-    z-index: -1;
-    pointer-events: none;
-  }
-  h1 {
-    font-size: 1.5rem;
-    margin-top: 0;
-  }
-  button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  a {
-    color: #2563eb;
-  }
-</style>
