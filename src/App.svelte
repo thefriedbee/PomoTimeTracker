@@ -25,6 +25,6 @@
   <section aria-labelledby="support-heading">
     <h2 id="support-heading">Need help?</h2>
     <p>Email <a href="mailto:pomotimetracker@outlook.com">pomotimetracker@outlook.com</a> with your app version, device, and a description of the issue.</p>
-    <p class="muted"><a href="{import.meta.env.BASE_URL}TimeTracker_demo.pdf">Earlier demonstration guide (PDF)</a><br />This guide may show an older version of the app.</p>
+    <p class="muted"><a href="{import.meta.env.BASE_URL}FocoTaps-Public-Guide.pdf">FocoTaps public guide (PDF)</a><br />Explore the app’s features, privacy choices, and setup instructions.</p>
   </section>
 </main>
