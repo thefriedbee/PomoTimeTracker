@@ -25,6 +25,11 @@
   <section aria-labelledby="support-heading">
     <h2 id="support-heading">Need help?</h2>
     <p>Email <a href="mailto:pomotimetracker@outlook.com">pomotimetracker@outlook.com</a> with your app version, device, and a description of the issue.</p>
-    <p class="muted"><a href="{import.meta.env.BASE_URL}FocoTaps-Public-Guide.pdf">FocoTaps public guide (PDF)</a><br />Explore the app’s features, privacy choices, and setup instructions.</p>
+    <p class="muted">Explore the app’s features, privacy choices, and setup instructions in the FocoTaps public guide:</p>
+    <ul aria-label="Public guide languages">
+      <li><a href="{import.meta.env.BASE_URL}FocoTaps-Public-Guide.pdf" lang="en" hreflang="en">English guide (PDF)</a></li>
+      <li><a href="{import.meta.env.BASE_URL}FocoTaps-Public-Guide-zh-Hans.pdf" lang="zh-Hans" hreflang="zh-Hans">简体中文指南（PDF）</a></li>
+      <li><a href="{import.meta.env.BASE_URL}FocoTaps-Public-Guide-es.pdf" lang="es" hreflang="es">Guía en español (PDF)</a></li>
+    </ul>
   </section>
 </main>
